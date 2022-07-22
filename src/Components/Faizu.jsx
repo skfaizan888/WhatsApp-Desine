@@ -27,7 +27,11 @@ const Faizu = ({
         </Col>
         <Col lg={3}>
           <h5 className="content-heading-name">Shaik Faizu</h5>
-          <p className="content-typing"> {rahutyping ? "Typing..." : ""} </p>
+          {/* <p>online</p> */}
+          <p className="content-typing">
+            {" "}
+            {rahutyping ? "Typing..." : "online"}{" "}
+          </p>
         </Col>
         <Col lg={5}>
           <SearchIcon style={{ marginLeft: "250px" }} />

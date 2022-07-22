@@ -27,7 +27,10 @@ const Rohu = ({
         </Col>
         <Col lg={3}>
           <h5 className="content-heading-name">Rohu Khan</h5>
-          <p className="content-typing"> {faizutyping ? "Typing..." : " "} </p>
+          <p className="content-typing">
+            {" "}
+            {faizutyping ? "Typing..." : "online"}{" "}
+          </p>
         </Col>
         <Col lg={5}>
           <SearchIcon style={{ marginLeft: "250px" }} />
@@ -38,14 +41,14 @@ const Rohu = ({
       </Row>
       <Col lg={12}>
         <Card className="content-background-img">
-          {userrahu.map((elem) => (
+          {userrahu.map((item) => (
             <Row>
               <Col lg={3}>
                 <Alert
-                  severity="success"
+                  severitys="succcess"
                   style={{ position: "relative", left: "450px" }}
                 >
-                  <strong> {elem} </strong>
+                  <strong> {item} </strong>
                 </Alert>
               </Col>
             </Row>
